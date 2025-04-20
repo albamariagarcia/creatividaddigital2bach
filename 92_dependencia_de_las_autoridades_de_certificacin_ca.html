@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>9.2 Dependencia de las autoridades de certificación (CA) | Certificados digitales </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Alba María Suárez García" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-35"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Certificados digitales</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">CERTIFICADOS DIGITALES</a></li>
+   <li><a href="1_definicin_y_funcin.html" class="no-ch">1. Definición y función</a></li>
+   <li><a href="2_composicin_de_un_certificado_digital.html" class="no-ch">2. Composición de un certificado digital</a></li>
+   <li><a href="3_tipos_de_certificados_digitales.html" class="daddy">3. Tipos de certificados digitales</a>
+   <ul class="other-section">
+      <li><a href="31_certificado_de_servidor_ssltls.html" class="no-ch">3.1 Certificado de servidor (SSL/TLS)</a></li>
+      <li><a href="32_certificados_personales.html" class="no-ch">3.2 Certificados personales</a></li>
+      <li><a href="33_certificados_de_firma_de_cdigo.html" class="no-ch">3.3 Certificados de firma de código</a></li>
+      <li><a href="34_certificado_de_firma_de_documentos.html" class="no-ch">3.4 Certificado de firma de documentos</a></li>
+      <li><a href="35_certificados_de_autoridad_ca.html" class="no-ch">3.5 Certificados de autoridad (CA)</a></li>
+      <li><a href="has_aprendido_algo.html" class="no-ch">¿Has aprendido algo?</a></li>
+   </ul>
+   </li>
+   <li><a href="4_funcionamiento_de_un_certificado_digital.html" class="daddy">4. Funcionamiento de un certificado digital</a>
+   <ul class="other-section">
+      <li><a href="41_generacin_de_claves.html" class="no-ch">4.1 Generación de claves</a></li>
+      <li><a href="42_emisin_del_certificado.html" class="no-ch">4.2 Emisión del certificado</a></li>
+      <li><a href="43_firma_y_validacin.html" class="no-ch">4.3 Firma y validación</a></li>
+   </ul>
+   </li>
+   <li><a href="5_certificado_y_criptografa.html" class="daddy">5. Certificado y criptografía</a>
+   <ul class="other-section">
+      <li><a href="51_criptografa_asimtrica.html" class="no-ch">5.1 Criptografía asimétrica</a></li>
+      <li><a href="52_criptografa_simtrica.html" class="no-ch">5.2 Criptografía simétrica</a></li>
+   </ul>
+   </li>
+   <li><a href="6_autoridades_de_certificain_ca.html" class="daddy">6. Autoridades de certificaión (CA)</a>
+   <ul class="other-section">
+      <li><a href="61_proceso_de_verificacin.html" class="no-ch">6.1 Proceso de verificación</a></li>
+      <li><a href="62_algunas_de_las_principales_autoridades_de_certificacin_ca.html" class="no-ch">6.2 Algunas de las principales autoridades de certificación (CA)</a></li>
+      <li><a href="63_tipos_de_certificados_emitidos_por_la_ca.html" class="no-ch">6.3 Tipos de certificados emitidos por la CA</a></li>
+      <li><a href="64_algunas_de_las_principales_autoridades_de_certificacin.html" class="no-ch">6.4 Algunas de las principales autoridades de certificación</a></li>
+   </ul>
+   </li>
+   <li><a href="7_infraestructura_de_clase_pblica.html" class="daddy">7. Infraestructura de clase pública</a>
+   <ul class="other-section">
+      <li><a href="71_autoridades_de_certificacin.html" class="no-ch">7.1 Autoridades de certificación</a></li>
+      <li><a href="72_autoridades_de_registro_ra.html" class="no-ch">7.2 Autoridades de registro (RA)</a></li>
+      <li><a href="73_almacenamiento_de_certificados.html" class="no-ch">7.3 Almacenamiento de certificados</a></li>
+   </ul>
+   </li>
+   <li><a href="8_ventajas_de_los_certificados_digitales.html" class="daddy">8. Ventajas de los certificados digitales</a>
+   <ul class="other-section">
+      <li><a href="81_seguridad.html" class="no-ch">8.1 Seguridad</a></li>
+      <li><a href="82_integridad.html" class="no-ch">8.2 Integridad</a></li>
+      <li><a href="83_cumplimiento_con_regulaciones.html" class="no-ch">8.3 Cumplimiento con regulaciones</a></li>
+      <li><a href="84_otros_beneficios_adicionales.html" class="no-ch">8.4 Otros beneficios adicionales</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="9_desventajas_y_riesgos_de_los_certificados_digitales.html" class="current-page-parent daddy">9. Desventajas y riesgos de los certificados digitales</a>
+   <ul>
+      <li><a href="91_revocacin_de_certificados.html" class="no-ch">9.1 Revocación de certificados</a></li>
+      <li id="active"><a href="92_dependencia_de_las_autoridades_de_certificacin_ca.html" class="active no-ch">9.2 Dependencia de las autoridades de certificación (CA)</a></li>
+      <li><a href="93_gestin_de_certificados.html" class="no-ch">9.3 Gestión de certificados</a></li>
+   </ul>
+   </li>
+   <li><a href="10_renovacin_de_certificados.html" class="daddy">10. Renovación de certificados</a>
+   <ul class="other-section">
+      <li><a href="101_renovacin_de_certificados.html" class="no-ch">10.1 Renovación de certificados</a></li>
+      <li><a href="102_mtodos_para_verificar_la_revocacin_de_certificados.html" class="no-ch">10.2 Métodos para verificar la revocación de certificados</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="91_revocacin_de_certificados.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="93_gestin_de_certificados.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">9.2 Dependencia de las autoridades de certificación (CA)</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id37">
+<div class="iDevice emphasis0" >
+<div id="ta37_151_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="background-color: #00ccff; font-size: 14pt;"><em><strong>2. Dependencia de las Autoridades de Certificación (CA)</strong></em></span></p>
+<p>La dependencia de las CA representa un riesgo significativo en la infraestructura de certificados digitales. Las Autoridades de Certificación (CA) actúan como los "guardianes" de la confianza en la red, emitiendo certificados digitales y validando las identidades de las partes involucradas. Sin embargo, si una CA es comprometida o actúa de manera irresponsable, toda la cadena de confianza puede verse afectada:</p>
+<p><span style="font-size: 14pt; background-color: #00ccff;"><em><strong>Compromiso de una CA:</strong></em></span> Si una CA es hackeada o si se emiten certificados fraudulentos por error o negligencia, todos los certificados emitidos por esa CA pueden ser considerados no confiables. Esto puede poner en peligro la seguridad de miles o millones de usuarios, ya que cualquier transacción autenticada mediante un certificado de una CA comprometida podría ser manipulada por atacantes. En algunos casos, los atacantes pueden incluso crear sus propios certificados fraudulentos utilizando una CA comprometida, lo que permite el ataque de suplantación de identidad (phishing) o el intercepto de comunicaciones.</p>
+<p><span style="font-size: 14pt;"><em><strong><span style="background-color: #00ccff;">Confianza y responsabilidad:</span></strong></em></span> La confianza en una CA depende de su reputación y de su capacidad para mantener altos estándares de seguridad. Cualquier falla de seguridad por parte de la CA afectará a toda la infraestructura PKI que depende de ella.</p>
+<p><span style="background-color: #00ccff; font-size: 14pt;"><em><strong>Revocación global:</strong></em></span> En el caso de una violación grave de la seguridad, como un compromiso de una CA importante, puede ser necesario revocar todos los certificados emitidos por esa CA, lo que tendría efectos disruptivos en una amplia gama de usuarios, sistemas y organizaciones.</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="91_revocacin_de_certificados.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="93_gestin_de_certificados.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
