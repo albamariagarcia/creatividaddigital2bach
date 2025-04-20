@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.5 Certificados de autoridad (CA) | Certificados digitales </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Alba María Suárez García" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-9"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Certificados digitales</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">CERTIFICADOS DIGITALES</a></li>
+   <li><a href="1_definicin_y_funcin.html" class="no-ch">1. Definición y función</a></li>
+   <li><a href="2_composicin_de_un_certificado_digital.html" class="no-ch">2. Composición de un certificado digital</a></li>
+   <li class="current-page-parent"><a href="3_tipos_de_certificados_digitales.html" class="current-page-parent daddy">3. Tipos de certificados digitales</a>
+   <ul>
+      <li><a href="31_certificado_de_servidor_ssltls.html" class="no-ch">3.1 Certificado de servidor (SSL/TLS)</a></li>
+      <li><a href="32_certificados_personales.html" class="no-ch">3.2 Certificados personales</a></li>
+      <li><a href="33_certificados_de_firma_de_cdigo.html" class="no-ch">3.3 Certificados de firma de código</a></li>
+      <li><a href="34_certificado_de_firma_de_documentos.html" class="no-ch">3.4 Certificado de firma de documentos</a></li>
+      <li id="active"><a href="35_certificados_de_autoridad_ca.html" class="active no-ch">3.5 Certificados de autoridad (CA)</a></li>
+      <li><a href="has_aprendido_algo.html" class="no-ch">¿Has aprendido algo?</a></li>
+   </ul>
+   </li>
+   <li><a href="4_funcionamiento_de_un_certificado_digital.html" class="daddy">4. Funcionamiento de un certificado digital</a>
+   <ul class="other-section">
+      <li><a href="41_generacin_de_claves.html" class="no-ch">4.1 Generación de claves</a></li>
+      <li><a href="42_emisin_del_certificado.html" class="no-ch">4.2 Emisión del certificado</a></li>
+      <li><a href="43_firma_y_validacin.html" class="no-ch">4.3 Firma y validación</a></li>
+   </ul>
+   </li>
+   <li><a href="5_certificado_y_criptografa.html" class="daddy">5. Certificado y criptografía</a>
+   <ul class="other-section">
+      <li><a href="51_criptografa_asimtrica.html" class="no-ch">5.1 Criptografía asimétrica</a></li>
+      <li><a href="52_criptografa_simtrica.html" class="no-ch">5.2 Criptografía simétrica</a></li>
+   </ul>
+   </li>
+   <li><a href="6_autoridades_de_certificain_ca.html" class="daddy">6. Autoridades de certificaión (CA)</a>
+   <ul class="other-section">
+      <li><a href="61_proceso_de_verificacin.html" class="no-ch">6.1 Proceso de verificación</a></li>
+      <li><a href="62_algunas_de_las_principales_autoridades_de_certificacin_ca.html" class="no-ch">6.2 Algunas de las principales autoridades de certificación (CA)</a></li>
+      <li><a href="63_tipos_de_certificados_emitidos_por_la_ca.html" class="no-ch">6.3 Tipos de certificados emitidos por la CA</a></li>
+      <li><a href="64_algunas_de_las_principales_autoridades_de_certificacin.html" class="no-ch">6.4 Algunas de las principales autoridades de certificación</a></li>
+   </ul>
+   </li>
+   <li><a href="7_infraestructura_de_clase_pblica.html" class="daddy">7. Infraestructura de clase pública</a>
+   <ul class="other-section">
+      <li><a href="71_autoridades_de_certificacin.html" class="no-ch">7.1 Autoridades de certificación</a></li>
+      <li><a href="72_autoridades_de_registro_ra.html" class="no-ch">7.2 Autoridades de registro (RA)</a></li>
+      <li><a href="73_almacenamiento_de_certificados.html" class="no-ch">7.3 Almacenamiento de certificados</a></li>
+   </ul>
+   </li>
+   <li><a href="8_ventajas_de_los_certificados_digitales.html" class="daddy">8. Ventajas de los certificados digitales</a>
+   <ul class="other-section">
+      <li><a href="81_seguridad.html" class="no-ch">8.1 Seguridad</a></li>
+      <li><a href="82_integridad.html" class="no-ch">8.2 Integridad</a></li>
+      <li><a href="83_cumplimiento_con_regulaciones.html" class="no-ch">8.3 Cumplimiento con regulaciones</a></li>
+      <li><a href="84_otros_beneficios_adicionales.html" class="no-ch">8.4 Otros beneficios adicionales</a></li>
+   </ul>
+   </li>
+   <li><a href="9_desventajas_y_riesgos_de_los_certificados_digitales.html" class="daddy">9. Desventajas y riesgos de los certificados digitales</a>
+   <ul class="other-section">
+      <li><a href="91_revocacin_de_certificados.html" class="no-ch">9.1 Revocación de certificados</a></li>
+      <li><a href="92_dependencia_de_las_autoridades_de_certificacin_ca.html" class="no-ch">9.2 Dependencia de las autoridades de certificación (CA)</a></li>
+      <li><a href="93_gestin_de_certificados.html" class="no-ch">9.3 Gestión de certificados</a></li>
+   </ul>
+   </li>
+   <li><a href="10_renovacin_de_certificados.html" class="daddy">10. Renovación de certificados</a>
+   <ul class="other-section">
+      <li><a href="101_renovacin_de_certificados.html" class="no-ch">10.1 Renovación de certificados</a></li>
+      <li><a href="102_mtodos_para_verificar_la_revocacin_de_certificados.html" class="no-ch">10.2 Métodos para verificar la revocación de certificados</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="34_certificado_de_firma_de_documentos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="has_aprendido_algo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.5 Certificados de autoridad (CA)</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id10">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">3.5 Certificado de autoridad (CA)</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta10_137_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="font-family: 'book antiqua', palatino, serif;">Un certificado de autoridad (CA, por sus siglas en inglés: Certificate Authority) es un tipo de certificado digital emitido por una entidad confiable que tiene la responsabilidad de verificar la identidad de las partes involucradas en una transacción digital y emitir certificados que validan la autenticidad de las personas o sistemas en línea.</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;">En el contexto de la infraestructura de clave pública (PKI, por sus siglas en inglés), una Autoridad de Certificación (CA) es una organización que emite, valida y revoca certificados digitales utilizados para asegurar comunicaciones y transacciones electrónicas, como la firma digital, la autenticación en línea y la encriptación de datos.</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;"><strong>Verificación de Identidad: </strong>La función principal de una Autoridad de Certificación es verificar la identidad de las entidades (personas, empresas o sistemas) antes de emitirles un certificado digital.</span><br /><span style="font-family: 'book antiqua', palatino, serif;">La verificación puede implicar la validación de documentos o la realización de pruebas de identidad a través de diversos métodos, como la autenticación de documentos físicos o el uso de bases de datos. </span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;"><strong>Emisión de Certificados Digitales: </strong>Una vez verificada la identidad de una entidad, la CA emite un certificado digital. Este certificado es utilizado para firmar electrónicamente documentos, cifrar comunicaciones o autenticar a una entidad en sistemas digitales.</span><br /><span style="font-family: 'book antiqua', palatino, serif;">Los certificados digitales incluyen una clave pública, que permite a otras partes verificar la identidad del titular y cifrar mensajes de manera segura.</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;"><strong>Cadena de Confianza: </strong>Las Autoridades de Certificación forman una jerarquía conocida como cadena de confianza. En esta jerarquía, las CA pueden ser raíz (root CA), intermedias (intermediate CA) o finales (end-entity certificate).CA raíz: Es la autoridad de confianza principal y no depende de ninguna otra entidad.</span><br /><span style="font-family: 'book antiqua', palatino, serif;">CA intermedia: Son emitidas por una CA raíz o intermedia, y su propósito es aumentar la seguridad y la flexibilidad del sistema de certificación.</span><br /><span style="font-family: 'book antiqua', palatino, serif;">Certificados finales: Son los emitidos a las entidades finales (personas o sistemas) que los utilizan para autenticar su identidad o firmar digitalmente documentos.</span><br /><span style="font-family: 'book antiqua', palatino, serif;"><strong></strong></span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;"><strong>Revocación y Gestión de Certificados: </strong>Las CA también gestionan la revocación de certificados. Si se sospecha que un certificado ha sido comprometido, la CA puede invalidarlo y actualizar las listas de revocación de certificados (CRL) para que las partes involucradas sepan que dicho certificado ya no es válido.</span><br /><span style="font-family: 'book antiqua', palatino, serif;"><strong></strong></span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;"><strong>Cifrado y Seguridad: </strong>Los certificados emitidos por las CA permiten la cifrado de datos, lo que asegura que las comunicaciones sean privadas. Solo el propietario de la clave privada asociada al certificado puede descifrar los datos cifrados con la clave pública.</span><br /><span style="font-family: 'book antiqua', palatino, serif;">Además, los certificados permiten verificar la integridad de los mensajes y confirmar que no han sido alterados en el proceso de transmisión.</span><br /><span style="font-family: 'book antiqua', palatino, serif;">Tipos de Certificados de Autoridad</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;"><strong>Certificado SSL/TLS: </strong>Estos certificados son utilizados principalmente para cifrar las conexiones entre los navegadores web y los servidores web, garantizando que la información transmitida esté protegida contra interceptaciones.</span><br /><span style="font-family: 'book antiqua', palatino, serif;">Los navegadores web (como Chrome, Firefox, Safari) verifican la validez de estos certificados al visitar sitios web, mostrando un candado verde o un aviso de seguridad si el certificado no es válido.</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;"><strong>Certificados de Firma de Código: </strong>Usados para firmar aplicaciones de software, controladores y otros componentes de software, asegurando que el código proviene de una fuente confiable y que no ha sido alterado.</span><br /><span style="font-family: 'book antiqua', palatino, serif;">Certificados de Firma de Documentos:</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;">Utilizados para firmar documentos digitalmente, garantizando la autenticidad e integridad de los mismos.</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;">Certificados de Autenticación de Cliente:</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;">Estos certificados se utilizan para autenticar la identidad de los usuarios en plataformas o aplicaciones en línea. Son una forma de autenticación de dos factores.</span><br /><span style="font-family: 'book antiqua', palatino, serif;"><strong></strong></span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;"><strong>Certificados de Email (S/MIME): </strong>Utilizados para firmar y cifrar correos electrónicos, asegurando que el mensaje es enviado por la persona correcta y que no ha sido alterado en tránsito.</span><br /><span style="font-family: 'book antiqua', palatino, serif;">Proceso de Emisión de un Certificado por una CA</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;"><strong>Solicitud: </strong>La entidad que necesita el certificado solicita a la CA la emisión del mismo, lo que incluye presentar pruebas de identidad.</span><br /><span style="font-family: 'book antiqua', palatino, serif;">Verificación:</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;">La CA verifica la identidad de la entidad solicitante. Este proceso puede incluir la validación de documentos, una llamada telefónica, o incluso una autenticación de la organización a través de métodos más avanzados, como el uso de bases de datos verificadas.</span><br /><span style="font-family: 'book antiqua', palatino, serif;">Emisión del Certificado:</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;">Una vez que la CA valida la identidad de la entidad solicitante, emite el certificado digital. Este certificado contiene una clave pública, junto con la información de la entidad y una firma digital que autentica la validez del certificado.</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;"><strong>Instalación y Uso: </strong>El certificado es instalado en el sistema o dispositivo correspondiente (por ejemplo, en un servidor web o en el correo electrónico de un usuario) y puede ser utilizado para las aplicaciones que lo requieran (como la firma de un documento o la autenticación en un sistema).</span><br /><span style="font-family: 'book antiqua', palatino, serif;">Ejemplos de Autoridades de Certificación</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;"><strong>DigiCert: </strong>Una de las CA más grandes y conocidas a nivel mundial. Ofrecen una amplia variedad de certificados, incluidos certificados SSL/TLS, de firma de código y para firma de documentos.</span><br /><span style="font-family: 'book antiqua', palatino, serif;">Comodo (ahora Sectigo):</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;"><strong>Seguridad: </strong>La infraestructura de la CA asegura que los datos sean protegidos mediante cifrado y que la identidad de las partes sea validada.</span><br /><span style="font-family: 'book antiqua', palatino, serif;"><strong></strong></span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;"><strong>Cumplimiento Legal: </strong>En muchos países, las firmas electrónicas basadas en certificados de una CA confiable tienen el mismo valor legal que las firmas tradicionales, lo que permite cumplir con regulaciones locales e internacionales.</span></p>
+<p><strong>Prevención de Fraudes:</strong></p>
+<p>Al verificar la identidad de los solicitantes de certificados, las CA ayudan a prevenir el fraude y la suplantación de identidad en línea.</p>
+<p><img src="autoridad.png" alt="" width="980" height="700" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="34_certificado_de_firma_de_documentos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="has_aprendido_algo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

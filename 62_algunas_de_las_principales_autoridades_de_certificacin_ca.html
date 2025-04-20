@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>6.2 Algunas de las principales autoridades de certificación (CA) | Certificados digitales </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Alba María Suárez García" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-20"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Certificados digitales</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">CERTIFICADOS DIGITALES</a></li>
+   <li><a href="1_definicin_y_funcin.html" class="no-ch">1. Definición y función</a></li>
+   <li><a href="2_composicin_de_un_certificado_digital.html" class="no-ch">2. Composición de un certificado digital</a></li>
+   <li><a href="3_tipos_de_certificados_digitales.html" class="daddy">3. Tipos de certificados digitales</a>
+   <ul class="other-section">
+      <li><a href="31_certificado_de_servidor_ssltls.html" class="no-ch">3.1 Certificado de servidor (SSL/TLS)</a></li>
+      <li><a href="32_certificados_personales.html" class="no-ch">3.2 Certificados personales</a></li>
+      <li><a href="33_certificados_de_firma_de_cdigo.html" class="no-ch">3.3 Certificados de firma de código</a></li>
+      <li><a href="34_certificado_de_firma_de_documentos.html" class="no-ch">3.4 Certificado de firma de documentos</a></li>
+      <li><a href="35_certificados_de_autoridad_ca.html" class="no-ch">3.5 Certificados de autoridad (CA)</a></li>
+      <li><a href="has_aprendido_algo.html" class="no-ch">¿Has aprendido algo?</a></li>
+   </ul>
+   </li>
+   <li><a href="4_funcionamiento_de_un_certificado_digital.html" class="daddy">4. Funcionamiento de un certificado digital</a>
+   <ul class="other-section">
+      <li><a href="41_generacin_de_claves.html" class="no-ch">4.1 Generación de claves</a></li>
+      <li><a href="42_emisin_del_certificado.html" class="no-ch">4.2 Emisión del certificado</a></li>
+      <li><a href="43_firma_y_validacin.html" class="no-ch">4.3 Firma y validación</a></li>
+   </ul>
+   </li>
+   <li><a href="5_certificado_y_criptografa.html" class="daddy">5. Certificado y criptografía</a>
+   <ul class="other-section">
+      <li><a href="51_criptografa_asimtrica.html" class="no-ch">5.1 Criptografía asimétrica</a></li>
+      <li><a href="52_criptografa_simtrica.html" class="no-ch">5.2 Criptografía simétrica</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="6_autoridades_de_certificain_ca.html" class="current-page-parent daddy">6. Autoridades de certificaión (CA)</a>
+   <ul>
+      <li><a href="61_proceso_de_verificacin.html" class="no-ch">6.1 Proceso de verificación</a></li>
+      <li id="active"><a href="62_algunas_de_las_principales_autoridades_de_certificacin_ca.html" class="active no-ch">6.2 Algunas de las principales autoridades de certificación (CA)</a></li>
+      <li><a href="63_tipos_de_certificados_emitidos_por_la_ca.html" class="no-ch">6.3 Tipos de certificados emitidos por la CA</a></li>
+      <li><a href="64_algunas_de_las_principales_autoridades_de_certificacin.html" class="no-ch">6.4 Algunas de las principales autoridades de certificación</a></li>
+   </ul>
+   </li>
+   <li><a href="7_infraestructura_de_clase_pblica.html" class="daddy">7. Infraestructura de clase pública</a>
+   <ul class="other-section">
+      <li><a href="71_autoridades_de_certificacin.html" class="no-ch">7.1 Autoridades de certificación</a></li>
+      <li><a href="72_autoridades_de_registro_ra.html" class="no-ch">7.2 Autoridades de registro (RA)</a></li>
+      <li><a href="73_almacenamiento_de_certificados.html" class="no-ch">7.3 Almacenamiento de certificados</a></li>
+   </ul>
+   </li>
+   <li><a href="8_ventajas_de_los_certificados_digitales.html" class="daddy">8. Ventajas de los certificados digitales</a>
+   <ul class="other-section">
+      <li><a href="81_seguridad.html" class="no-ch">8.1 Seguridad</a></li>
+      <li><a href="82_integridad.html" class="no-ch">8.2 Integridad</a></li>
+      <li><a href="83_cumplimiento_con_regulaciones.html" class="no-ch">8.3 Cumplimiento con regulaciones</a></li>
+      <li><a href="84_otros_beneficios_adicionales.html" class="no-ch">8.4 Otros beneficios adicionales</a></li>
+   </ul>
+   </li>
+   <li><a href="9_desventajas_y_riesgos_de_los_certificados_digitales.html" class="daddy">9. Desventajas y riesgos de los certificados digitales</a>
+   <ul class="other-section">
+      <li><a href="91_revocacin_de_certificados.html" class="no-ch">9.1 Revocación de certificados</a></li>
+      <li><a href="92_dependencia_de_las_autoridades_de_certificacin_ca.html" class="no-ch">9.2 Dependencia de las autoridades de certificación (CA)</a></li>
+      <li><a href="93_gestin_de_certificados.html" class="no-ch">9.3 Gestión de certificados</a></li>
+   </ul>
+   </li>
+   <li><a href="10_renovacin_de_certificados.html" class="daddy">10. Renovación de certificados</a>
+   <ul class="other-section">
+      <li><a href="101_renovacin_de_certificados.html" class="no-ch">10.1 Renovación de certificados</a></li>
+      <li><a href="102_mtodos_para_verificar_la_revocacin_de_certificados.html" class="no-ch">10.2 Métodos para verificar la revocación de certificados</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="61_proceso_de_verificacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="63_tipos_de_certificados_emitidos_por_la_ca.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">6.2 Algunas de las principales autoridades de certificación (CA)</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id22">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">6.2 Algunas de las principales autoridades de certificación (CA)</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta22_136_2" class="block iDevice_content">
+<div class="exe-text"><p><br /><span style="font-size: 14pt; background-color: #00ccff; font-family: 'book antiqua', palatino, serif;"><em><strong>Algunas de las Principales Autoridades de Certificación (CA)</strong></em></span><br /><span style="font-family: 'book antiqua', palatino, serif;">Existen muchas Autoridades de Certificación, algunas de las cuales son ampliamente conocidas y utilizadas por empresas y usuarios de todo el mundo. A continuación, algunas de las principales:</span></p>
+<p><span style="font-family: 'book antiqua', palatino, serif;"><span style="font-size: 14pt; background-color: #00ccff;"><em><strong>GlobalSign:</strong> </em></span>Es una de las principales CA a nivel mundial y proporciona una amplia gama de soluciones de seguridad digital, desde certificados SSL/TLS hasta gestión de identidades y firmas electrónicas.</span></p>
+<p><br /><span style="font-family: 'book antiqua', palatino, serif;"><span style="background-color: #00ccff;"><em><strong><span style="font-size: 14pt; background-color: #00ccff;">DigiCert:</span> </strong></em></span>Conocida por su alta calidad y fiabilidad, DigiCert ofrece certificados SSL/TLS, firma de código y otros servicios de autenticación digital. Se ha convertido en un actor clave tras adquirir Symantec SSL.</span></p>
+<p><br /><span style="font-family: 'book antiqua', palatino, serif;"><em><strong><span style="background-color: #00ccff; font-size: 14pt;">Comodo (ahora Sectigo):</span></strong></em> Comodo es una de las CA más grandes y ofrece una variedad de servicios de certificación digital, como SSL/TLS, certificados de firma de código y protección contra fraudes. En 2018, Comodo cambió su nombre a Sectigo.</span></p>
+<p><br /><span style="font-family: 'book antiqua', palatino, serif;"><span style="font-size: 14pt; background-color: #00ccff;"><em><strong>Let's Encrypt (gratis):</strong></em></span> Let's Encrypt es una CA que proporciona certificados SSL/TLS de manera gratuita y automatizada, facilitando la adopción de HTTPS por parte de sitios web. Su misión es mejorar la seguridad general de internet mediante el fomento de cifrado gratuito y accesible.</span></p>
+<p><br /><span style="font-family: 'book antiqua', palatino, serif;"><strong><span style="background-color: #00ccff; font-size: 14pt;">Symantec: </span></strong>Anteriormente una de las CA más prominentes, Symantec vendió su unidad de seguridad a DigiCert, pero sigue siendo un nombre importante en la seguridad digital y la gestión de certificados.</span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="61_proceso_de_verificacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="63_tipos_de_certificados_emitidos_por_la_ca.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
